@@ -1,0 +1,258 @@
+<!--
+Webpage made by Jørgen , Peer, Elias and Arsalan
+
+Credits:
+https://fonts.google.com/specimen/Lato
+https://fonts.google.com/specimen/Spectral+SC
+-->
+<!DOCTYPE html>
+<html lang=eng>
+
+<head>
+    <title>InfinityWear</title>
+    <link rel="icon" type="image/png" href="bilder/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 
+		Code for the arrow that takes you to the top, onclick it starts the function refrenced in the code
+	-->
+    <a class="pil" title="Opp til toppen" id="toppen" onclick="tiptopp()"><img src="bilder/pilopp.png" class="up" alt="upbutton"></a>
+    <!-- 
+		Codes the navigation bar situated fixed at the top of the page
+	-->
+    <div class="nav" id="nav">
+        <div class="dropdown" id="knapper">
+            <div class="aceknapp">
+                <a class="knapp" href="#" onclick="closemenu()"><img src="bilder/logo.png" class="logo" alt="logo"></a>
+            </div>
+            <input id="openNav" type="checkbox"/>
+            <div class="navigationbuttons" id="navigationbuttons">
+					<a class="knapp d" href="#about" onclick="lukk();">About</a>
+					<a class="knapp d" href="#product" onclick="lukk();">Product</a>
+					<a class="knapp d" href="#how" onclick="lukk();">How</a>
+					<a class="knapp d" href="#cause" onclick="lukk();">Cause</a>
+					<a class="knapp d" href="#shop" onclick="lukk();">Shop</a>
+					<a class="knapp d" href="#contact" onclick="lukk();">Contact</a>
+					<a class="knapp d" href="norsk.html" onclick="lukk();"><img src="bilder/norflag.png" class="flag" alt="Norsk flagg knapp"></a>
+                    <label for="openNav">
+                        <a class="hamburgler knapp">
+                            <div class="hamb" id="hamb"></div>
+                            <div class="hamb" id="hamb"></div>
+                            <div class="hamb" id="hamb"></div>
+                        </a>
+                    </label>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- 
+		The jumbotron is the banner spanning fixed at the frontpage
+	-->
+    <div class="jumbotron" onclick="lukk();">
+        <div id="header">
+            <img src="bilder/logomedtekst.png" alt="logo with infinity wear text">
+        </div>
+    </div>
+    <!-- 
+		The main section is everything but the previously mentioned divitions
+	-->
+    <section id="main" onclick="lukk()">
+        <!-- 
+			The anchor points are for navigation purposes as you see they are refrenced in the navigation bar <a> tags
+		-->
+        <a class="anker" id="about"></a>
+        <!-- 
+			the diffrent top and bunn sections signifies diffrent sections with diffrent background colors.
+		-->
+        <section class="topp">
+            <div class="wrapper">
+                <h2>About</h2>
+                <p>
+                    In today’s society we are getting more and more dependent on our mobile devices. They are playing a key role in our daily tasks, and we also use them to store valuable information. We use them for everything. It's nearly at that point where running out of battery is the end of the world. As mobile devices become more and more advanced the battery technology made to charge them have become stale and none evolving. Many have tried to solve this by the use of big and heavy powerbanks that take up otherwise precious space in your backpack or pocket, so why can’t we just wear the batteries and have the sun pay for it?
+                </p>
+                <input class="text" id="visMer" type='checkbox' />
+                <more>
+                    <p>
+                        This is the fundamental idea behind the InfinityJacket. InfinityWear is taking aim to become the leading tech apparel company in the world, keeping with the times and not compromising when it comes to design choices. We hope to bring the wearable tech into the mainstream with our product line starting with the new InfinityJacket. Join the revolution, buy into the infinity.
+                    </p>
+                </more>
+                <p style="font-size: 1.2em; font-weight: bold;">
+                    <label id="showLess" style="cursor: pointer;" for="visMer">
+                            Read more/less...
+                    </label>
+                </p>
+            </div>
+        </section>
+        <a class="anker" id="product"></a>
+        <section class="bunn">
+            <!-- 
+				The wrapper class adds padding and the pages 15% margins on both sides
+			-->
+            <div class="wrapper">
+                <h2>The InfinityJacket</h2>
+                <p>
+                    InfinityWear wants to change the world by making your jacket smarter. We think that apparel has a lot of potential, and that is why we came up with the idea of InfinityJacket. The Infinity Jacket might look like any other jacket, but do not let that fool you! The tech inside is what makes this jacket revolutionary. We have taken some of the markets most cutting edge technologies and put them all in a jacket that still looks like something you would like to wear. To School, to work, on a hike. Everywhere!
+                </p>
+                <input class="text2" id="visMer2" type='checkbox' />
+                <more2>
+                <p>
+                    The goal with the InfinityJacket is to integrate as much technology into it without compromise to the design of the jacket. It is important for us that the product would not cause any discomfort to the end user, we want our jacket to be as comfortable to wear as possible. The InfinityJacket is designed for any kind of weather, with it being water resistant it can tackle any weather and any temperature. The temperature sensitive wool integrated into the jacket is designed so that it will help distribute the warmth evenly to your whole upper body, making it perfect for even the coldest days.</p>
+                <p>
+                    InfinityJacket will work as a powerhouse for your phone and portable devices. Equipped with batteries, solar panels and wireless charging; our goal is to keep you powered for a much longer time than any other portable charging solutions out there. 
+                </p>
+                </more2>
+                <p style="font-size: 1.0em; font-weight: bold;">
+                    <label id="showLess2" style="cursor: pointer;" for="visMer2">
+                            Read more/less...
+                    </label>
+                </p>
+                <p>
+                    Here you can see some of the cool features the Infinity Jacket has:</p>
+            </div>
+        </section>
+        <div class="banner">
+            <img src="bilder/infinitygif.gif" alt="pictures of the technology and jacket">
+        </div>
+        <a class="anker" id="how"></a>
+        <section class="topp">
+            <div class="wrapper">
+                <h2>How</h2>
+                <p>
+                    The InfinityJacket is using a set of solid-state rechargeable battery packs, customized to fit into the jackets design; helping to minimize the overall bulkiness of the jacket and making the weight distributed more equally. Solid-state batteries gives three times the energy capacity of an Lithium-Ion battery and removes the fire hazard associated with conventional batteries. This is one of the design choices we made to keep the jacket safe. Solid-state batteries also makes sure that you can go longer than with today's batteries without charging the jacket. It also enables us to give the jacket a QI wireless charging device, which can charge any type of device supporting wireless charging. You simply just put your device or phone in the front pocket of the jacket and you are good to go. If your device does not support wireless charging, there will also be possible to use a conventional USB-socket built into the pocket.
+                </p>
+                <input class="text1" id="visMer1" type='checkbox' />
+                <more1>
+                    <p>
+                        There will be two different ways to charge up your jacket. The main way of charging the jacket will be too plug in any of the already existing charging cables into the power socket in your wall. The second way and easily the most exciting way to charge is through the use of solar power. The solar panels are designed to supplement the already maxed out batteries of the jacket, helping to keep you connected those last crucial minutes. Furthermore, using flexible solar panels we are able to bend the panels in a way that their presence becomes unbenounced to the user. In fact, you should not be able to see the solar panels at all.
+                    </p>
+                    <p>
+                        To achieve the level of efficiency desired of the solar panels, we made the jackets outer layer so that it would absorb as little of the photons energy as possible. At the same time keeping the isolation any other conventional jacket can offer. By having a three layered jacket we make sure that we keep the cool design by having the solar panels strategically placed around in the second layer of the jacket. The third layer is simply there to keep you warm and protect your upper body.    
+                    </p>
+                </more1>
+                <p style="font-size: 1.2em; font-weight: bold;">
+                    <label id="showLess1" style="cursor: pointer;" for="visMer1">
+                            Read more/less...
+                    </label>
+                </p>
+            </div>
+        </section>
+        <a class="anker" id="cause"></a>
+        <section class="bunn">
+            <div class="wrapper">
+                <h2>Reaching out to the poor</h2>
+				<p>
+                    We believe our product will help make a change in the world and make a difference for so many lives, but we don’t believe that it’s enough. For every sale of a InfintyWear product we donate 10% to the Bill & Melinda Gates Foundation. We believe it to be our responsibility as more fortunate people to help those less fortunate. By buying infinityWear products you’re supporting a better world for everyone.
+                </p>
+            </div>
+        </section>
+        <a class="anker" id="shop"></a>
+        <section class="topp">
+            <div class="wrapper">
+                <h2>Shop</h2>
+                <p>To make our project become real, we do appreciate all kinds of support. At this point we offer the opportunity to pre-order InfinityWear. By buying our product now, you will be the first in line to receive InfinityJacket when it´s available. In addition, you will contribute to making our Infinity-dream become reality.</p>
+                <div class="paymentform">
+                    <h2>Pre-order</h2>
+                    <div class="payment">
+                        <form action="#shop">
+                            <div class="payment_form owner">
+                                <label for="owner">Owner</label>
+                                <br>
+                                <input class="place" placeholder="Full name" type="text" id="owner">
+                            </div>
+                            <div class="payment_form cvv">
+                                <label for="CVC">CVV</label>
+                                <br>
+                                <input maxlength="3" class="place" placeholder="CVV" type="number" id="CVC">
+                            </div>
+                            <div class="payment_form" id="cardnumber">
+                                <label for="card_Number">Card Number</label>
+                                <br>
+                                <input maxlength="16" class="place" placeholder="xxxx xxxx xxxx xxxx" type="number" id="card_Number">
+                            </div>
+                            <div class="payment_form" id="expiration">
+                                <label>Expiration Date</label>
+                                <br>
+                                <select>
+                                    <option value="1">January</option>
+                                    <option value="2">February </option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <select>
+                                    <option value="1">2019</option>
+                                    <option value="2">2020</option>
+                                    <option value="3">2021</option>
+                                    <option value="4">2022</option>
+                                    <option value="5">2023</option>
+                                    <option value="6">2024</option>
+                                </select>
+                            </div>
+                            <div class="payment_form" id="cards">
+                                <a href="https://www.visa.com/"><img src="bilder/visa.png" alt="visa"></a>
+                                <a href="https://www.vipps.no/"><img src="bilder/vipps.png" alt="vipps"></a>
+                                <a href="https://www.mastercard.com/"><img src="bilder/mastercard.png" alt="mastercard"></a>
+                            </div>
+                            <div class="payment_form," id="pay">
+                                <button type="submit" class="paymentbutton confirmpay" id="confirm">Pre-order for 300$</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <a class="anker" id="contact"></a>
+        <section class="bunn">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <p>If you are curious about our progress, or if you want to get more info. Feel free to sign up on our mailing list below.</p>
+                <!-- 
+					Codes the form for the email signup
+                -->
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email@example.com" onkeypress="handle(event)"><br>
+                <button type="submit" class="button submitemail" id="myBtn" onclick="slett();">Submit!</button>
+                <p>This product is still in the early stages of development. If you have questions or ideas, you can reach us on Facebook, Twitter and Reddit. </p>
+
+            </div>
+        </section>
+        <!-- 
+			Footer section is mostly redundant info about the pages socialmedia pages“
+		-->
+        <section class="footer">
+            <div class="wrapper" id="footer">
+                <div class="column">
+                    <p>InfinityWear &copy; 2018</p>
+                </div>
+                <!-- 
+					Displays the facebook, twitter and reddit pictures in the footer
+				-->
+                <div class="some">
+                    <ul>
+                        <li><a href="http://facebook.com/" target="_blank"><img src="bilder/face.png" alt="facebook logo" class="fa"></a></li>
+                        <li><a href="http://twitter.com/" target="_blank"><img src="bilder/twitter.png" alt="twitter logo" class="fa"></a></li>
+                        <li><a href="http://reddit.com/" target="_blank"><img src="bilder/reddit.png" alt="reddit logo" class="fa"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </section>
+    <!-- Load in JavaScript-->
+    <script src="script.js"></script>
+</body>
+
+</html>

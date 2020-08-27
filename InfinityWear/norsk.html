@@ -1,0 +1,262 @@
+<!--
+Webpage made by Jørgen , Peer, Elias and Arsalan
+
+Credits:
+https://fonts.google.com/specimen/Lato
+https://fonts.google.com/specimen/Spectral+SC
+-->
+<!DOCTYPE html>
+<html lang=nor>
+
+<head>
+    <title>InfinityWear</title>
+    <link rel="icon" type="image/png" href="bilder/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 
+		Code for the arrow that takes you to the top, onclick it starts the function refrenced in the code
+	-->
+    <a class="pil" title="Opp til toppen" id="toppen" onclick="tiptopp()"><img src="bilder/pilopp.png" class="up" alt="oppKnapp"></a>
+    <!-- 
+		Codes the navigation bar situated fixed at the top of the page
+	-->
+    <div class="nav" id="nav">
+        <div class="dropdown" id="knapper">
+            <div class="aceknapp">
+                <a class="knapp" href="#" onclick="closemenu()"><img src="bilder/logo.png" class="logo" alt="logo bilde"></a>
+            </div>
+            <input id="openNav" type="checkbox"/>
+            <div class="navigationbuttons" id="navigationbuttons">
+					<a class="knapp d" href="#about" onclick="lukk();">OM</a>
+					<a class="knapp d" href="#product" onclick="lukk();">PRODUKT</a>
+					<a class="knapp d" href="#how" onclick="lukk();">HVORDAN</a>
+					<a class="knapp d" href="#cause" onclick="lukk();">BISTAND</a>
+					<a class="knapp d" href="#shop" onclick="lukk();">BUTIKK</a>
+					<a class="knapp d" href="#contact" onclick="lukk();">KONTAKT</a>
+					<a class="knapp d" href="index.html" onclick="lukk();"><img src="bilder/usaflag.png" class="flag" alt="Norsk flagg knapp"></a>
+                    <label for="openNav">
+                        <a class="hamburgler knapp">
+                            <div class="hamb" id="hamb"></div>
+                            <div class="hamb" id="hamb"></div>
+                            <div class="hamb" id="hamb"></div>
+                        </a>
+                    </label>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- 
+		The jumbotron is the banner spanning fixed at the frontpage
+	-->
+    <div class="jumbotron" onclick="lukk()">
+        <div id="header">
+            <img src="bilder/logomedtekst.png" alt="logo med infinitywear tekst">
+        </div>
+    </div>
+    <!-- 
+		The main section is everything but the previously mentioned divitions
+	-->
+    <section id="main" onclick="lukk()">
+        <!-- 
+			The anchor points are for navigation purposes as you see they are refrenced in the navigation bar <a> tags
+		-->
+        <a class="anker" id="about"></a>
+        <!-- 
+			the diffrent top and bunn sections signifies diffrent sections with diffrent background colors.
+		-->
+        <section class="topp">
+            <div class="wrapper">
+                <h2>Om</h2>
+                <p>
+                    I dagens samfunn blir vi mer og mer avhengige av mobiltelefonen vår. Smarttelefonene i dagens samfunn har en nøkkelrolle i alle sine liv. Vi bruker dem for alt. For mange er det nesten verdens undergang om batteriet blir flatt. Du lagrer viktig informasjon som du kan komme til å trenge når som helst. Etterhvert som enhetene blir mer og mer avanserte, har batteriteknologien stått på stedet hvil. Mange har forsøkt å løse dette med store og tunge powerbanks som tar opp verdifull plass i sekk og lommer. Hvorfor kan vi ikke bare kle på oss batteriene og la sola ta kostnadene?
+                </p>
+                <input class="text" id="visMer" type='checkbox' />
+                <more>
+                    <p>
+                        Dette er den grunnleggende ideen bak InfinityJacket. InfinityJacket tar sikte på å bli det ledende teknologiske klesselskapet i verden, holde seg til den teknologiske tiden vi er i og ikke gi komprimisser når det gjelder designvalg. Vårt mål er å revolusjonere klesmarkedet til et nytt nivå, og med InfinityJacket skal vi bevise det!
+                    </p>
+                </more>
+                <p style="font-size: 1.2em; font-weight: bold;">
+                    <label id="showLess" style="cursor: pointer;" for="visMer">
+                            Les mer/mindre...
+                    </label>
+                </p>
+            </div>
+        </section>
+        <a class="anker" id="product"></a>
+        <section class="bunn">
+            <!-- 
+				The wrapper class adds padding and the pages 15% margins on both sides
+			-->
+            <div class="wrapper">
+                <h2>Produktet</h2>
+                <p>
+                    InfinityWear vil endre verden ved å gjøre jakken din smartere. Vi tror klær har mye potensiale, og det er hvorfor vi kom med ideen InfinityJacket. InfinityJacket ser kanskje ut som en vanlig jakke, men ikke la det lure deg! Teknologien på innsiden er hva som gjør denne jakken revolusjonerende. Vi har tatt noe av markedet mest banebrytende teknologier og integrert dem i en jakke som fremdeles ser ut som en jakke du kan bruke. Til skole, til jobb, på en tur. Over alt!
+                </p>
+                <input class="text2" id="visMer2" type='checkbox' />
+                <more2>
+                <p>
+                Målet med InfinityJacket er å integrere så mye teknologi som mulig uten å gjøre noen kompromisser på designet til jakken. Det er viktig for oss at produktet ikke går ut over komforten til brukeren. Vi vil at jakken skal være så komfortabel å bruke som mulig. InfinityJacket er designet for alt slags vær og alle temperaturer. Det temperatursensitive ullet integrert i jakken er designet så jakken vil fordele varmen jevnt over hele overkroppen, noe som gjør den perfekt for selv de kaldeste dagene.
+                </p>
+                <p>
+                    InfinityJacket vil fungere som et energihus for telefonen din og dine bærbare enheter. Utstyrt med batterier, solpaneler og trådløs lading; er målet å holde deg ladet mye lenger enn andre portable ladeløsninger på markedet.
+                </p>
+                </more2>
+                <p style="font-size: 1.0em; font-weight: bold;">
+                    <label id="showLess2" style="cursor: pointer;" for="visMer2">
+                            Les mer/mindre...
+                    </label>
+                </p>
+                <p>
+                    Her er noen illustrasjoner av konseptet:</p>
+            </div>
+        </section>
+        <div class="banner">
+            <img src="bilder/infinitygif.gif" alt="Bilder av jakken og teknologien bak">
+        </div>
+        <a class="anker" id="how"></a>
+        <section class="topp">
+            <div class="wrapper">
+                <h2>Hvordan</h2>
+                <p>
+                    InfinityJacket bruker solid-state ladbare batteripakker, skreddersydd til å passe jakkens design. Dette reduserer problemet med en klumpete jakke og gjør vekten bedre fordelt. Solid-state batterier har tre ganger så stor kapasitet som Lithium-Ion batterier og eliminerer brannrisikoen tilknyttet konvensjonelle batterier.Dette er en av designvalgene vi gjorde for å holde jakken sikker. Solid-state batterier gjør også at kapasiteten varer lenger enn dagens batterier uten å lade jakken. Dette gjør at vi kan gi jakken en QI trådløs ladeenhet, som kan lade hvilken som helst enhet som støtter trådløs lading. Du kan simpelthen bare legge enheten eller telefonen din i lomma til jakken og du er klar. Hvis enheten din ikke støtter trådløs lading, så er det mulig å bruke en konvensjonell USB-kontakt som er innebygd i lommen.
+                </p>
+                <input class="text1" id="visMer1" type='checkbox' />
+                <more1>
+                    <p>
+                        Det vil være to forskjellige måter å lade opp jakken på. Hovedsakelig lades jakken opp ved at den plugges i veggen. Den andre og mest spennende måten å lade på er gjennom bruken av solenergi. Solcellepanelene er designet for å komplimentere høykapasitetsbatteriene til jakken, noe som hjelper med å holde enheten din i live til siste minutt. Videre, ved å bruke fleksible solcellepaneler, gjør vi at solcellepanelene ikke vil merkes av brukeren. Du vil faktisk ikke kunne se solcellepanelene i det hele tatt.
+                    </p>
+                    <p>
+                        For å oppnå effektiviteten vi ønsker av solcellepanelene, så har vi tenkt at det ytterste laget på jakken skal absorbere så lite energi fra solen som mulig. Samtidig som vi holder på isolasjonsegenskapene som andre konvensjonelle jakker kan tilby. Ved at jakken har tre lag kan vi holde designet stilig ved å legge solcellepanelene strategisk i det andre laget på jakken. Det tredje og innerste er der for å holde deg varm og for å beskytte overkroppen.
+                    </p>
+                </more1>
+                <p style="font-size: 1.2em; font-weight: bold;">
+                    <label id="showLess1" style="cursor: pointer;" for="visMer1">
+                            Les mer/mindre...
+                    </label>
+                </p>
+            </div>
+        </section>
+        <a class="anker" id="cause"></a>
+        <section class="bunn">
+            <div class="wrapper">
+                <h2>Bistand</h2>
+				<p>
+                    Vi tror produktet vårt vil hjelpe til med å skape forandringer i verden og utgjøre en forskjell i manges liv. Men vi synes ikke dette er nok. Hvor hvert salg av InfinityWare sine produkter donerer vi 10% til Bill & Melinda Gates Foundation. Vi mener det er vårt ansvar å hjelpe de som er mindre heldige. Ved å kjøpe InfinityWears produkter er du med å gjøre verden bedre for alle.
+                </p>
+            </div>
+        </section>
+        <a class="anker" id="shop"></a>
+        <section class="topp">
+            <div class="wrapper">
+                <h2>Butikk</h2>
+                <p>For å realisere produktet vårt setter vi pris på all mulig støtte. Vi tilbyr allerede muligheten til å forhåndsbestille InfinityJacket. Ved å kjøpe produktet vårt nå vil du være først i kø når InfinityWear blir tilgjengelig for salg. I tillegg vil du være med på å gjøre drømmen til virkelighet.</p>
+                <div class="paymentform">
+                    <h2>Forhåndsbestill</h2>
+                    <div class="payment">
+                        <form action="#shop">
+                            <div class="payment_form owner">
+                                <label for="owner">Kortholder</label>
+                                <br>
+                                <input class="place" placeholder="Fullt navn" type="text" id="owner">
+                            </div>
+                            <div class="payment_form cvv">
+                                <label for="CVC">CVV</label>
+                                <br>
+                                <input maxlength="3" class="place" placeholder="CVV" type="number" id="CVC">
+                            </div>
+                            <div class="payment_form" id="cardnumber">
+                                <label for="card_Number">Kortnummer</label>
+                                <br>
+                                <input maxlength="16" class="place" placeholder="xxxx xxxx xxxx xxxx" type="number" id="card_Number">
+                            </div>
+                            <div class="payment_form" id="expiration">
+                                <label>Utløpsdato</label>
+                                <br>
+                                <select>
+                                    <option value="1">Januar</option>
+                                    <option value="2">Februar </option>
+                                    <option value="3">Mars</option>
+                                    <option value="4">April</option>
+                                    <option value="5">Mai</option>
+                                    <option value="6">Juni</option>
+                                    <option value="7">Juli</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">Oktober</option>
+                                    <option value="11">November</option>
+                                    <option value="12">Desember</option>
+                                </select>
+                                <select>
+                                    <option value="1">2019</option>
+                                    <option value="2">2020</option>
+                                    <option value="3">2021</option>
+                                    <option value="4">2022</option>
+                                    <option value="5">2023</option>
+                                    <option value="6">2024</option>
+                                </select>
+                            </div>
+                            <div class="payment_form" id="cards">
+                                <a href="https://www.visa.com/"><img src="bilder/visa.png" alt="visa"></a>
+                                <a href="https://www.vipps.no/"><img src="bilder/vipps.png" alt="vipps"></a>
+                                <a href="https://www.mastercard.com/"><img src="bilder/mastercard.png" alt="mastercard"></a>
+                            </div>
+                            <div class="payment_form," id="pay">
+                                <button type="submit" class="paymentbutton confirmpay" id="confirm">Forhåndsbestill for 3299,-</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <a class="anker" id="contact"></a>
+        <section class="bunn">
+            <div class="wrapper">
+                <h2>Kontakt</h2>
+                <p>
+                    Hvis du er nysgjerrig på hvor langt vi har kommet, eller generelt bare vil holde deg oppdatert på informasjon fra firmaet kan du melde deg på epostoppdatering under.
+                </p>
+                <!-- 
+					Codes the form for the email signup
+                -->
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email@eksempel.no" onkeypress="handle(event)"><br>
+                <button type="submit" class="button submitemail" id="myBtn" onclick="slett();">Send!</button>
+                <p>
+                    Dette prosjektet er fortsatt i de tidligste utviklingsstadiene. Hvis du vil ha mer informasjon eller har lyst å kontakte oss, kan du finne oss på Facebook, Twitter og Reddit.
+                </p>
+
+            </div>
+        </section>
+        <!-- 
+			Footer section is mostly redundant info about the pages socialmedia pages“
+		-->
+        <section class="footer">
+            <div class="wrapper" id="footer">
+                <div class="column">
+                    <p>InfinityWear &copy; 2018</p>
+                </div>
+                <!-- 
+					Displays the facebook, twitter and reddit pictures in the footer
+				-->
+                <div class="some">
+                    <ul>
+                        <li><a href="http://facebook.com/" target="_blank"><img src="bilder/face.png" alt="facebook logo" class="fa"></a></li>
+                        <li><a href="http://twitter.com/" target="_blank"><img src="bilder/twitter.png" alt="twitter logo" class="fa"></a></li>
+                        <li><a href="http://reddit.com/" target="_blank"><img src="bilder/reddit.png" alt="reddit logo" class="fa"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+    <!-- Load in JavaScript-->
+    <script src="script.js"></script>
+</body>
+
+</html>
